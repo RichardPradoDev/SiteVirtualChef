@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encomendas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
+</head>
+<header><!--Inicio Header-->
+    <img id="imagem" src="imagens/icon.png" alt="">
+    <h1>Virtual Chef</h1>
+</header><!--Fim Header-->
+
+<body>
+    <main>
+        <section><!--Inicio Seção 1-->
+            <h2 id="titulo">Encomendas</h2>
+            <hr>
+            <br>
+            <table id="tabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-clientes">
+                    <tr class="clientes">
+                        <td class="info-nome">Richard</td>
+                        <td class="info-produto">Kit Básico de cozinha</td>
+                        <td class="info-qtde">1</td>
+                        <td class="info-valor">209.99</td>
+                        <td class="info-valorTotal"></td>
+                    </tr>
+                    <tr class="clientes">
+                        <td class="info-nome">Ramon</td>
+                        <td class="info-produto">Faca - Corte perfeito</td>
+                        <td class="info-qtde">2</td>
+                        <td class="info-valor">79.99</td>
+                        <td class="info-valorTotal"></td>
+                    </tr>
+                    <tr class="clientes">
+                        <td class="info-nome">Mariana</td>
+                        <td class="info-produto">Kit Intermediario de cozinha</td>
+                        <td class="info-qtde">1</td>
+                        <td class="info-valor">269.99</td>
+                        <td class="info-valorTotal"></td>
+                    </tr>
+                    <tr class="clientes">
+                        <td class="info-nome">Igor</td>
+                        <td class="info-produto">Livro de culinária - iniciante</td>
+                        <td class="info-qtde">2</td>
+                        <td class="info-valor">A</td>
+                        <td class="info-valorTotal"></td>
+                    </tr>
+                    <tr class="clientes">
+                        <td class="info-nome">Geovana</td>
+                        <td class="info-produto">Receitas de molho - iniciante</td>
+                        <td class="info-qtde">O</td>
+                        <td class="info-valor">79.99</td>
+                        <td class="info-valorTotal"></td>
+                    </tr>
+                    <tr class="clientes">
+                        <td class="info-nome">Kauan</td>
+                        <td class="info-produto">Livro de culinária - Intermediario</td>
+                        <td class="info-qtde">2</td>
+                        <td class="info-valor">A</td>
+                        <td class="info-valorTotal"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section><!--Fim seçao 1 -->
+
+        <section><!--Inicio Formulario-->
+            <h1 id="titulo">Adicionar nova Encomenda</h1>
+            <!--Exibe os erros de validação do formulário-->
+            <ul id="mensagens-erro"></ul>
+            <hr>
+            <form class="formulario" id="form-adiciona" action="#" method="post">
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" placeholder="Digite o nome do(a) cliente" required>
+
+                <label for="produto">Produto</label>
+                <select id="produto" class="selecao_form" name="produto">
+                    <option value="" disable selected hidden>Selecione</option>
+                    <option value="Livro de cúlinaria - Intermediario">Livro de culinária - Intermediario</option>
+                    <option value="Receitas de molho - iniciante">Receitas de molho - iniciante</option>
+                    <option value="Livro de cúlinaria - iniciante">Livro de culinária - iniciante</option>
+                    <option value="Cueca Calvin Klein">Kit Intermediario de cozinha</option>
+                    <option value="Avental">Avental personlizado</option>
+                    <option value="Faca personlizada">Faca personalizada</option>
+                    <option value="Livro de receitas - Hamburgers">Livro de receitas - Hamburgers</option>
+                </select>
+
+                <label for="qtde">Quantidade</label>
+                <input id="qtde" type="text" placeholder="Digite a quantidade encomendada">
+
+                <label for="valor">Valor Unitário</label>
+                <input id="valor" type="text" placeholder="Digite o valor unitário do produto">
+
+                <br>
+                <button id="botaoAdicionar" type="submit" value="Adicionar">Adicionar</button>
+
+            </form><!--Fim formulário-->
+            <br>
+        </section>
+    </main>
+    <script src="js/verifica-valor.js"></script>
+    <script src="js/adiciona-encomenda.js"></script>
+    <script src="js/remover-encomenda.js"></script>
+
+    <footer> &copy; Richard Aparecido dos Santos Prado 2024 </footer>
+</body>
+
+</html>
