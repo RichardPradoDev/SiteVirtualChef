@@ -18,8 +18,12 @@
     <main>
         <section><!--Inicio Seção 1-->
             <h2 id="titulo">Encomendas</h2>
-            <hr>
+
+            <label class="filtro" for="filtrar-tabela">Filtro </label>
+            <input class="filtro" type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente">
+
             <br>
+            <hr>
             <table id="tabela">
                 <thead>
                     <tr>
@@ -114,6 +118,7 @@
     <script src="js/verifica-valor.js"></script>
     <script src="js/adiciona-encomenda.js"></script>
     <script src="js/remover-encomenda.js"></script>
+    <script src="js/filtrar.js"></script>
 
     <footer> &copy; Richard Aparecido dos Santos Prado 2024 </footer>
 </body>

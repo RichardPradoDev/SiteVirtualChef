@@ -1,15 +1,4 @@
-
-//Ações diretamente nas linhas da tabela
-/*var encomendas = document.querySelectorAll(".clientes");
-
-encomendas.forEach(function (linha) {
-    linha.addEventListener("dbclick", function () {
-        this.remove();
-    });
-});*/
-
-//Ações na tabela 
-var tabela = document.querySelector("table");
+var tabela = document.querySelector("#tabela-clientes");
 
 tabela.addEventListener("dblclick", function (event) {
     event.target.parentNode.classList.add("fadeOut")
@@ -19,3 +8,5 @@ tabela.addEventListener("dblclick", function (event) {
         event.target.parentNode.remove();
     }, 500);
 });
+
+
