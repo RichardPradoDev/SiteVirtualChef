@@ -7,10 +7,14 @@
 
 :root {
     --font-principal: 'Montserrat', sans-serif;
+    --cor-principal: #E8E3D6;
+    --cor-header: #000000;
+    --cor-border: #777777;
+    --cor-erro: red;
 }
 
 header {
-    background: #E8E3D6;
+    background-color: var(--cor-principal);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +28,7 @@ header h1 {
     text-align: center;
     flex-direction: row;
     margin-bottom: 20px;
-    color: #393631;
+    color: var(--cor-header);
 }
 
 #imagem {
@@ -57,18 +61,18 @@ hr {
 }
 
 #tabela th {
-    background: #E8E3D6;
-    color: #393631;
+    background-color: var(--cor-principal);
+    color: var(--cor-header);
     font-size: 1.2em;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor-border);
     text-transform: uppercase;
 }
 
 #tabela td {
     font-size: 1em;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid var(--cor-border);
 }
 
 .formulario {
@@ -100,7 +104,7 @@ option {
 }
 
 .formulario button {
-    background-color: #E8E3D6;
+    background-color: var(--cor-principal);
     width: 100px;
     height: 25px;
     margin: 0 auto;
@@ -108,7 +112,7 @@ option {
 
 
 footer {
-    background: #E8E3D6;
+    background: var(--cor-principal);
     text-align: center;
     font-size: 18px;
     font: bold;
@@ -117,7 +121,7 @@ footer {
 }
 
 #mensagens-erro {
-    color: red;
+    color: var(--cor-erro);
     text-align: center;
 }
 
@@ -130,7 +134,6 @@ footer {
     display: flex;
     align-items: center;
     margin-left: 92px;
-    font-family: var(--font-principal);
     width: 20%;
     height: 22px;
     display: flex;
