@@ -57,7 +57,8 @@ hr {
     font-size: 1em;
     border-collapse: collapse;
     margin: 0 auto;
-    font-family: var(--font-principal)
+    font-family: var(--font-principal);
+    margin-bottom: 10px;
 }
 
 #tabela th {
@@ -73,6 +74,16 @@ hr {
     font-size: 1em;
     text-align: center;
     border: 1px solid var(--cor-border);
+}
+
+#buscar-encomendas {
+    background-color: var(--cor-principal);
+    width: 125px;
+    height: 35px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
 }
 
 .formulario {
@@ -105,9 +116,10 @@ option {
 
 .formulario button {
     background-color: var(--cor-principal);
-    width: 100px;
-    height: 25px;
+    width: 125px;
+    height: 35px;
     margin: 0 auto;
+    border-radius: 5px;
 }
 
 
