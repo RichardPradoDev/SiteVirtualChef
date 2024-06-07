@@ -44,7 +44,8 @@ function montaTD(dado) {
 
 function montaTR(novaEncomenda) {
     var tr = document.createElement("tr");
-    tr.appendChild(montaTD(novaEncomenda.nome));
+    tr.classList.add("clientes");
+    tr.appendChild(montaTD(novaEncomenda.nome)).classList.add("info-nome");
     tr.appendChild(montaTD(novaEncomenda.produto));
     tr.appendChild(montaTD(novaEncomenda.qtde));
     tr.appendChild(montaTD(formataValor(parseFloat(novaEncomenda.unitario))));
